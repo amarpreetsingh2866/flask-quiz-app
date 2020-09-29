@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+
+
+
+{% block body %}
+
+{% if session.logged_in %}
+    <h1>Welcome {{session.username}}</h1>
+{% endif %}
+<div class="jumbotron text-center">
+    <br><br>
+    <h1>Welcome to Quiz App</h1>
+    <p class="lead">This application is built on python flask framework</p>
+</div>
+{% endblock %}
